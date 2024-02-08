@@ -1,0 +1,184 @@
+/* dans le selecteur * est defini les proprietes communes pour toute la page */
+*{
+    overflow: auto; /* permet d'adapter la fenetre automatiquement pour que les contenus ne debordent pas*/
+}
+
+body{
+    background-color: #88A1BB;
+    font-family: arial;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.contenu{
+    background-color: white;
+
+    /* marge: haut droite bas gauche (dans cet ordre)
+    px: la taille des marges reste fixe
+    %: la taille des marges varie en fonction de la taille de l'ecran
+
+    margin: 60px 10% 80px 10% 
+    auto: prend tout l'espace restant dans le cote defini
+    */
+    min-width: 350px;
+    margin: 60px 10% 80px 10%;
+
+    /* padding: marge interne */
+
+    padding: 0px 30px 30px 30px;
+    /* effet d'ombre: decalage_x decalage_y quantite_flou imposer_ombres_partout couleur*/
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;
+}
+
+p.description{
+    text-align: center;
+    font-size: 15px;
+    max-width: 400px;
+    /* display: block, inline, inline-block */
+    display: inline-block;
+}
+
+p.categorie{
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-top: -20px;
+    padding: 8px 18px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.categorie{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+
+div.separateur{
+    height: 1px;
+    width: 100px;
+    background-color: black;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+div.infos{
+    position: relative;
+}
+
+table.infos{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    background-color: #6C829D;
+    opacity: 80%;
+    height: 80px;
+}
+
+table.infos th{
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+table.infos td{
+    font-size: 14px;
+    text-align: center;
+    vertical-align: top;
+}
+
+img.infos{
+    display: block;
+    object-fit: cover; /* permet de zoomer dans l'image sans la deformer (deborder) */
+    max-height: 400px;
+    min-height: 200px; /* pour eviter que tout se deforme avant que l'image ne se charge (souvent le cas avec les url) */
+    background-color: lightgrey;
+
+}
+
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid#6C829D;
+    padding-bottom: 5px;
+}
+
+div.colonne{
+    width: 45%;
+    margin-top: 20px;
+}
+
+div.colonne1{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.colonne2{
+    float: right;
+}
+
+div.ingredients p{
+    border: 1px solid lightgray;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 0px;
+    margin-top: 4px;
+    margin-bottom: 0px;
+
+}
+
+table.preparation p.numero{
+    background-color: #6C829D;
+    height: 25px;
+    text-align: center;
+    width: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box; /* permet de garder la meme hauteur de case tout en ajoutant le padding */
+    border-radius: 50%; /*pour avoir l'effet de rond*/
+    margin: 0px;
+}
+
+table.preparation td{
+    vertical-align: top;
+}
+
+table.preparation td.preparation_etape{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.preparation tr{
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
